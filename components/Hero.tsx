@@ -4,20 +4,29 @@ import { Spotlight } from './ui/Spotlight'
 import {TypewriterEffectSmooth } from './ui/TypewriterEffect'
 
 
-  const words = [
-    {
-      text: "Transforming Concepts into Seamless",
-      
-    },
-    {
-      text: "Experiences!",
-      className: "text-blue-500 dark:text-blue-500",
-    },
-  ];
-  
-
+const words = [
+  {
+    text: "Transforming",
+  },
+  {
+    text: "Concepts",
+  },
+  {
+    text: "Into",
+  },
+  {
+    text: "Seamless",
+    
+  },
+  {
+    text: "Experiences.",
+    className: "text-blue-500 dark:text-blue-500",
+    
+  },
+];
 function Hero() {
   return (
+    
     <div className="pb-20 pt-36">Hero
     
     <div>
@@ -46,13 +55,25 @@ function Hero() {
         Welcome to my portfolio.
 
        </h2>
-
-       <TypewriterEffectSmooth words={words} />
-
+       
+       <TypewriterEffectSmooth 
+       
+       className="text-center text-[40rem]
+       md:text-5xl lg:text-6xl"
+       words={words} 
+       
+       
+       />
+       <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+        Hi, I&apos;m Zain Ajmal a Full-Stack web-developer based
+        in Pakistan.
+       </p>
+     </div>
       </div>
+      
 
     </div>
-    </div>
+  
   )
 }
 
