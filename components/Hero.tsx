@@ -7,11 +7,11 @@ import {TypewriterEffectSmooth } from './ui/TypewriterEffect'
   const words = [
     {
       text: "Transforming Concepts into Seamless",
-      className:"text-sm"
+      
     },
     {
       text: "Experiences!",
-      className: "text-sm text-blue-500 dark:text-blue-500",
+      className: "text-blue-500 dark:text-blue-500",
     },
   ];
   
