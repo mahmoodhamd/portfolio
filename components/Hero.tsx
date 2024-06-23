@@ -1,29 +1,11 @@
 
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
-import {TypewriterEffectSmooth } from './ui/TypewriterEffect'
+import {TextGenerateEffect} from './ui/TextGenerateEffect'
+
+import '../app/styles.css';
 
 
-const words = [
-  {
-    text: "Transforming",
-  },
-  {
-    text: "Concepts",
-  },
-  {
-    text: "Into",
-  },
-  {
-    text: "Seamless",
-    
-  },
-  {
-    text: "Experiences.",
-    className: "text-blue-500 dark:text-blue-500",
-    
-  },
-];
 function Hero() {
   return (
     
@@ -38,7 +20,7 @@ function Hero() {
        
     </div>
    
-    <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.03  ] bg-grid-black/[0.2]  flex items-center justify-center
+    <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2]  flex items-center justify-center
     absolute top-0 left-0">
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center
@@ -56,18 +38,23 @@ function Hero() {
 
        </h2>
        
-       <TypewriterEffectSmooth 
+       <TextGenerateEffect
        
-       className="text-center text-[40rem]
-       md:text-5xl lg:text-6xl"
-       words={words} 
-       
+        className="text-center text-[40px]
+        md:text-5xl lg:text-6xl"
+        words="Transforming Concepts into Seamless Expreiences"
        
        />
        <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
         Hi, I&apos;m Zain Ajmal a Full-Stack web-developer based
         in Pakistan.
        </p>
+      
+       <a href='#about' className="bg-gray-950 text-gray-400 border border-gray-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+        <span className="bg-gray-400 shadow-gray-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+         Share my Work
+        </a>
+       
      </div>
       </div>
       
