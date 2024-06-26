@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-// coming this code from the aceternity
+
 const svgToDataUri = require("mini-svg-data-uri");
 
 const colors = require("tailwindcss/colors");
