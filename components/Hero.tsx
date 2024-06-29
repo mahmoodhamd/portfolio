@@ -3,7 +3,6 @@ import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import {TextGenerateEffect} from './ui/TextGenerateEffect'
 
-import '../app/styles.css';
 
 
 function Hero() {
@@ -42,18 +41,19 @@ function Hero() {
        <TextGenerateEffect
        
        className="text-center text-[40px]
-       md:text-5xl lg:text-6xl"
-        words="Transforming Concepts into Seamless Expreiences"
+       md:text-5xl lg:text-5xl"
+        words="Transforming Concepts into Seamless User Experiences"
        />
        <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
         Hi, I&apos;m Zain Ajmal a Full-Stack web-developer based
         in Pakistan.
        </p>
       
-       {/* <a href='#about' className="bg-gray-950 text-gray-400 border border-gray-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+       <a href='#about' className="bg-gray-950 text-gray-400 border border-gray-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group bg-[rgb(0_3_25_/_var(--tw-bg-opacity))]">
+       
         <span className="bg-gray-400 shadow-gray-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
          Share my Work
-        </a> */}
+        </a>
        
      </div>
       </div>
