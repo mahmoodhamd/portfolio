@@ -31,6 +31,7 @@ function Hero() {
        transparent_20%,black)]"/>
       
     </div>
+    {/* adjust the margin vertical and  my z axis  */}
     <div className="flex justify-center relative my-19 z-10">
       <div className="max-w-[89vw] md:max-w-2xl
       lg:max-w-[60vw] flex flex-col items-center justify-center">
@@ -48,7 +49,7 @@ function Hero() {
         Hi, I&apos;m Zain Ajmal a Full-Stack web-developer based
         in Pakistan.
        </p>
-      
+      {/* added a custom color in a button same background color for button as a background color of our webiste */}
        <a href='#about' className="bg-gray-950 text-gray-400 border border-gray-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group bg-[rgb(0_3_25_/_var(--tw-bg-opacity))]">
        
         <span className="bg-gray-400 shadow-gray-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
