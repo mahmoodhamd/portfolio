@@ -14,6 +14,7 @@ export const Grid = () => {
             key={item.id}
             title={item.title}
             description={item.description}
+            className={item.className}
             />
             ))}
         </BentoGrid>
