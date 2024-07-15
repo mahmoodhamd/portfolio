@@ -126,61 +126,42 @@ export const BentoGridItem = ({
              
              {id===3 && (
               <div className="flex gap-1 lg:gap-5 w-fit
-              absolute -right-3 lg:-right-2 ">
-                <div className="flex flex-col space-y-3
-                lg:space-y-8 ">
+              absolute -right-1 lg:-right-1 ">
+                <div className="flex flex-col gap-2
+                lg:gap-1">
                 {['JavaScript','Node.js','Nest.js','CDK'].map
                 ((item)=>(
-                 <span key={item} className="py-2 lg:py-4
-                 lg:px-3 px-4 text-xs lg:text-base
-                 opacity-50 lg:opacity-100 rounded-lg
-                 text-center bg-[#10132E]">
+                  <span
+                  key={item}
+                  className="py-3 lg:py-3 px-3 lg:px-2 text-xs opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
                   {item}
-                 </span>
+                </span>
                 ))}
-                <span className="py-4 px-3 rounded-lg
-                text-center bg-[#10132e]"/>
             
                 </div>
 
-                <div className="flex flex-col gap-3
-                lg:gap-8">
-                {['Express.js','Python','Flask','AWS'].map
+             
+
+                <div className="flex flex-col gap-2
+                lg:gap-1">
+                {['Python','Flash','Java','Springboot'].map
                 ((item)=>(
-                 <span key={item} className="py-2 lg:py-4
-                 lg:px-3 px-3 text-xs lg:text-base
-                 opacity-50 lg:opacity-100 rounded-lg
-                 text-center bg-[#10132E]">
+                  <span
+                  key={item}
+                  className="py-3 lg:py-3 px-2 lg:px-3 text-xs  opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
                   {item}
-                 </span>
+                </span>
                 ))}
-                <span className="py-4 px-3 rounded-lg
-                text-center bg-[#10132e]"/>
             
                 </div>
+
+             
+
+             
+
+
+                 </div>  
               
-                <div className="flex flex-col gap-3
-                lg:gap-8 ">
-                  <span className="py-4 px-3 rounded-lg
-                text-center bg-[#10132e]"/>
-                {['laravel','Golang','Springboot','Lambda'].map
-                ((item)=>(
-                 <span key={item} className="py-2 lg:py-4
-                 lg:px-3 px-3 text-xs lg:text-base
-                 opacity-50 lg:opacity-100 rounded-lg
-                 text-center bg-[#10132E]">
-                  {item}
-                 </span>
-                ))}
-                
-            
-                </div>
-
-
-
-
-
-                </div>
              )}
      
     </div>
