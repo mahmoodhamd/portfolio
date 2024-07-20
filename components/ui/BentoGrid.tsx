@@ -1,14 +1,18 @@
+'use client'
 import { useState } from "react";
-//import { IoCopyOutline } from "react-icons/io5";
+import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
 //import Lottie from "react-lottie";
+import animationData from '@/data/confetti.json';
+import MagicButton from "../MagicButton";
 
 import { cn } from "@/utils/cn";
 
 
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
+import Lottie from "react-lottie";
 //import GridGlobe from './GridGlobe'; // Ensure this path is correct
 //import animationData from "@/data/confetti.json";
 //import MagicButton from "../MagicButton";
@@ -54,8 +58,12 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
  
-
- 
+const [copied,setCopied]=useState(false);
+// handle email here  
+const handleCopy=()=>{
+navigator.clipboard.writeText('zain96ajmal@gmail.com');
+setCopied(true);
+ }
   return (
     <div
       className={cn(
@@ -95,12 +103,13 @@ export const BentoGridItem = ({
             />
           )}
         </div>
+        {/* this component is using here for the background gradient animation. */}
         {id === 6 && (
           // add background animation , remove the p tag
           <BackgroundGradientAnimation>
-            <div className="absolute z-50  flex items-center justify-center text-white font-bold">
+            {/* <div className="absolute z-50  flex items-center justify-center text-white font-bold">
 
-            </div>
+            </div> */}
           </BackgroundGradientAnimation>
         )}
         
@@ -144,7 +153,7 @@ export const BentoGridItem = ({
 
                 <div className="flex flex-col gap-2
                 lg:gap-1">
-                {['Python','Flash','Java','Springboot'].map
+                {['Python','Flask','Java','Springboot'].map
                 ((item)=>(
                   <span
                   key={item}
@@ -155,15 +164,35 @@ export const BentoGridItem = ({
             
                 </div>
 
-             
-
-             
-
-
                  </div>  
               
              )}
-     
+             {/* email copy and and effect is handling here */}
+        {id==6 && (
+
+          <div className="mt-5 relative">
+            <div className={`absolute -bottom-5 right-0`}
+            >
+              <Lottie options={{
+               loop:copied,
+               autoplay:copied,
+               animationData,
+               rendererSettings:{
+                preserveAspectRatio:'xMidYMid slice',
+               }
+              }} />
+            </div>
+             <MagicButton
+             title={copied ? 'Email copied':'Copy my email'}
+             icon={<IoCopyOutline/>}
+             position="left"
+             otherClasses="!bg-[#161a31]"
+             handleClick={handleCopy}
+             />
+             </div>
+        )}
+
+
     </div>
     </div>
     </div>  
