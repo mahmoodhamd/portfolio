@@ -91,7 +91,7 @@ export const projects = [
     title: "This Sims Resource",
     des: "Developed a web application to sell Sims Games content created by renowned artists. My team and I created artist management tools and a payment module using HTML, CSS, JavaScript, Bootstrap, PHP, Laravel, MySQL, and Redis.",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    iconLists: ["/php-horizontal.svg", "/laravel-ar21.svg", "/redis.svg", "/javascript-horizontal.svg", "/w3_css-ar21.svg","getbootstrap-ar21.svg"],
     link: "https://www.thesimsresource.com",
   },
   {

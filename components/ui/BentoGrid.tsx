@@ -61,9 +61,13 @@ export const BentoGridItem = ({
 const [copied,setCopied]=useState(false);
 // handle email here  
 const handleCopy=()=>{
-navigator.clipboard.writeText('zain96ajmal@gmail.com');
-setCopied(true);
- }
+  const email = 'zain96ajmal@gmail.com';
+  window.location.href = `mailto:${email}`;
+
+  setCopied(true);
+ 
+}
+
   return (
     <div
       className={cn(
