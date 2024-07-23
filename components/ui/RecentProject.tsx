@@ -1,6 +1,7 @@
 import { projects } from '@/data'
-import { title } from 'process'
+
 import React from 'react'
+import { ThreeDCardDemo } from './ThreeDCardDemo'
 
 function RecentProject() {
   return (
@@ -15,9 +16,9 @@ function RecentProject() {
 
     {projects.map(({id,title,des,iconLists,link})=>(
     
-    <div key={id} className="lg:min-h-[32.5rem] h-[25rem] flex items-center sm:w-96 w-[80vw]">
-      {title}
-
+    <div key={id} className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]">
+        <ThreeDCardDemo></ThreeDCardDemo>
+          
         </div>
     
     ))}
